@@ -1,0 +1,21 @@
+{
+  "name": "rasofiagames.unitycommand",
+  "displayName": "UnityCommand",
+  "version": "1.0.0",
+  "unity": "2019.4",
+  "description": "UnityCommand is an editor implementation of the command design pattern where the command can be applied, and reverted. The command, once applied, is within that state until the revert is called to represent the initialization and deinitialization of the represented state",
+  "keywords": [
+    "State",
+    "Actions",
+    "Command",
+    "Do",
+    "Undo",
+    "Codeless",
+    "Events",
+    "Callbacks"
+  ],
+  "author": {
+    "name": "Rasofia Games"
+  },
+  "type": "tool"
+}
