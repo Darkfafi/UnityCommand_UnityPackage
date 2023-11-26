@@ -99,7 +99,10 @@ namespace UnityCommands
 			}
 
 			IsApplied = true;
-			_onApply.Invoke(data);
+			if (_onApply != null)
+			{
+				_onApply.Invoke(data);
+			}
 			PerformInstructions(data, true);
 			return true;
 		}
@@ -135,7 +138,10 @@ namespace UnityCommands
 			}
 
 			IsApplied = false;
-			_onRevert.Invoke(data);
+			if (_onRevert != null)
+			{
+				_onRevert.Invoke(data);
+			}
 			PerformInstructions(data, false);
 			return true;
 		}
