@@ -22,6 +22,10 @@ namespace UnityCommands
 
 		private List<UnityCommandHandler> _instructions = new List<UnityCommandHandler>();
 
+		public bool HasApply => _onApply.GetPersistentEventCount() > 0;
+		public bool HasRevert => _onRevert.GetPersistentEventCount() > 0;
+		public bool HasCommands => HasApply || HasRevert;
+
 		public bool IsApplied
 		{
 			get; private set;
